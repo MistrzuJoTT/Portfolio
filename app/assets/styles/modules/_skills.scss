@@ -1,0 +1,28 @@
+
+/*Packages Section*/
+
+.skills {
+	li {
+	padding: 50px;
+	flex-basis: 30%;
+	text-align: center;
+}
+
+	.grid li i {
+	color: #48D1CC;
+}
+
+	.grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+@media only screen and (max-width: 480px) {
+	 .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+}
+
+
+}
