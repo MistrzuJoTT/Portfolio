@@ -14,18 +14,36 @@
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
 
-  <!-- build:js assets/scripts/Vendor.js -->
-  <script src="/temp/scripts/Vendor.js"></script>
-  <!-- endbuild -->
+<!-- JS -->
+  <script src="/assets/scripts/App.js"></script>
+  <!-- END JS -->
+  
 
 </head>
   <header>
     <h2><a href="#">Damian Kozak</a></h2>
-    <nav>
-      <li><a  href="#">O mnie</a></li>
-      <li><a  href="#">Co potrafię</a></li>
-      <li><a  href="#">Projekty</a></li>
+    <nav class="effect">
+      <li><a href="#about-me">O mnie</a></li>
+      <li><a href="#skills">Co potrafię</a></li>
+      <li><a href="#my-projects">Projekty</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </nav>
+
+    <div class="menu-collapsed">
+   <div class="bar"></div>
+   <nav>
+      <ul>
+        <li><a href="#about-me">O mnie</a></li>
+        <li><a href="#skills">Co potrafię</a></li>
+        <li><a href="#my-projects">Projekty</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+   </nav>
+</div>
+
+   
+
+   	
   </header>
 
   <section class="hero">
@@ -33,11 +51,11 @@
     <div class="hero-content-area">
       <h1>Damian Kozak</h1>
       <h3>Web Developer</h3>
-      <a href="#" class="btn">Kontakt</a>
+      
     </div>
   </section>
   
-  <section class="about-me">
+  <section id="about-me" onclick="window.location.hash='back';">
     <h3 class="title">O mnie:</h3>
     <p>Jestem młodą, ambitną i kreatywną osobą. Cały czas staram się pracować nad swoimi umiejętnościami i poznawać nowe technologie oraz narzędzia z zakresu tworzenia stron i aplikacji internetowych.</p>
 
@@ -46,7 +64,7 @@
   </section>
    
 
-  <section class="skills">
+  <section id="skills">
     <h3 class="title">Co potrafię</h3>
     
     <hr>
@@ -100,35 +118,95 @@
     </ul>
   </section>
 
-  <section class="my-projects">
+  <section id="my-projects">
     <h3 class="title">Moje Projekty</h3>
     <hr>
-    	<ul class="grid">
-      		<li class="small" style="background-image: url(assets/img/mountain1.jpg);"></li>
-      		<li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
-      		<li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
-      		<li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
-        </ul>
-
-        <figure>
-        	<img alt="one of my projects" src="assets/img/mountain1.jpg">
-
-        	<figcaption>
-        		<p><a href="#">Read More</a></p>
-    
+   	<div class="project-grid">
+   <div class="project">
+          <div class="project__links">
+            <a href="#"><span class="portfolio-link__icon fa fa-globe" aria-hidden="true"></span>View</a>
+            <a href="#"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+          </div>
+          <div class="project__description">
+            <h3>Kamienna Chata</h3>
+            <p>Projekt strony WWW</p>
+            <div class="project__technologies">
+              <span class="technology">HTML5</span>
+              <span class="technology">CSS3</span>
+              <span class="technology">JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__links">
+            <a href="#"><span class="portfolio-link__icon fa fa-globe" aria-hidden="true"></span>View</a>
+            <a href="#"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+          </div>
+          <div class="project__description">
+            <h3>To-Do List App</h3>
+            <p>Prosta aplikacja To-Do</p>
+            <div class="project__technologies">
+              <span class="technology">HTML5</span>
+              <span class="technology">CSS3</span>
+              <span class="technology">JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__links">
+            <a href="#"><span class="portfolio-link__icon fa fa-globe" aria-hidden="true"></span>View</a>
+            <a href="#"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+          </div>
+          <div class="project__description">
+            <h3>Rock-Paper-Scissors</h3>
+            <p>Prosta gra w papier, kamień, nożyce</p>
+            <div class="project__technologies">
+              <span class="technology">HTML5</span>
+              <span class="technology">CSS3</span>
+              <span class="technology">JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__links">
+            <a href="#"><span class="portfolio-link__icon fa fa-globe" aria-hidden="true"></span>View</a>
+            <a href="#"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+          </div>
+          <div class="project__description">
+            <h3>Geotronik</h3>
+            <p>Projekt strony WWW</p>
+            <div class="project__technologies">
+              <span class="technology">HTML5</span>
+              <span class="technology">CSS3</span>
+              <span class="technology">JS</span>
+              <span class="technology">GULP</span>
+              <span class="technology">SASS</span>
+            </div>
+          </div>
+        </div>
+  	</div>
   </section>
 
-  
-
-  <footer>
-   
-    <p>Damian Kozak </p>
+  <section id="contact">
+        
+    <div class="contact_container">
+      
+      <h5>Telefon</h5>
+      <p>690-087-904</p>
+      <h5>Email</h5>
+      <p>jamana113@gmail.com</p>
+    </div>
+     <h2 class="text-contact">Kontakt:</h2>
+    <div class="social_container">
+      <h3>Social Media</h3>
     <ul>
-      <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+      <li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
+      <li><a href="#"><i class="fa fa-file-pdf-o fa-3x"></i></a></li>
     </ul>
-  </footer>
+  </div>
+
+
 
 </body>
 </html>

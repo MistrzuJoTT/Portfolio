@@ -1,7 +1,8 @@
 
 /*Packages Section*/
 
-.skills {
+#skills {
+	
 	li {
 	padding: 50px;
 	flex-basis: 30%;
@@ -9,7 +10,7 @@
 }
 
 	.grid li i {
-	color: #48D1CC;
+	color: #303436;
 }
 
 	.grid li h4 {
@@ -17,7 +18,7 @@
 	margin: 25px 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media  (max-width: 800px) {
 	 .grid li {
 		flex-basis: 100%;
 		padding: 20px;
