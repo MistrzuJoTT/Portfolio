@@ -18,6 +18,18 @@
 	z-index: -1;
 	background-color: #80a3db;
 }
+	.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+	display:none;
+}
+
 
 	h1 {
 	font: bold 60px "Open Sans", sans-serif;
@@ -64,6 +76,14 @@
 	}
 }
 
+@media  (max-width: 500px) {
+	.background-image {
+		display:none;
+	}
+	.background {
+		display: block;
+	}
+}
 
 }
 

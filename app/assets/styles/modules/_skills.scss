@@ -8,7 +8,6 @@
 	flex-basis: 30%;
 	text-align: center;
 }
-
 	.grid li i {
 	color: #303436;
 }
@@ -17,6 +16,9 @@
 	font-size: 30px;
 	margin: 25px 0;
 }
+}
+
+	
 
 @media  (max-width: 800px) {
 	 .grid li {
@@ -26,4 +28,3 @@
 }
 
 
-}

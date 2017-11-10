@@ -15,17 +15,22 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 
-  watch('./app/assets/styles/**/*.scss', function() {
+  watch('./app/assets/styles/**/*.scss' ['sass'], function() {
     gulp.start('cssInject');
   });
 
-  
- 
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  })
 
 });
 
-gulp.task('cssInject', ['sass'], function() {
+gulp.task('cssInject', ['styles'], function() {
   return gulp.src('./app/temp/styles/styles.css')
     .pipe(browserSync.stream());
 });
 
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
+});
+gulp.task( 'default', [ 'watch' ] )
