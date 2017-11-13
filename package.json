@@ -1,5 +1,9 @@
 {
-  "name": "web-impuls",
+<<<<<<< HEAD
+  "name": "portfolio",
+=======
+  "name": "portfolio",
+>>>>>>> aed7d96a11ce92ff6bace7e6978808aa0d6e517f
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MistrzuJoTT/web-impuls.git"
+<<<<<<< HEAD
+    "url": "git+https://github.com/MistrzuJoTT/Portfolio.git"
+=======
+    "url": "git+https://github.com/MistrzuJoTT/Portfolio.git"
+>>>>>>> aed7d96a11ce92ff6bace7e6978808aa0d6e517f
   },
   "author": "Damian Kozak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MistrzuJoTT/web-impuls/issues"
+<<<<<<< HEAD
+    "url": "https://github.com/MistrzuJoTT/Portfolio/issues"
   },
-  "homepage": "https://github.com/MistrzuJoTT/web-impuls#readme",
+  "homepage": "https://github.com/MistrzuJoTT/Portfolio#readme",
+=======
+    "url": "https://github.com/MistrzuJoTT/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MistrzuJoTT/Portfolio#readme",
+>>>>>>> aed7d96a11ce92ff6bace7e6978808aa0d6e517f
   "dependencies": {
     "jquery": "^2.2.4",
     "jquery-smooth-scroll": "^2.0.0",
@@ -38,12 +52,23 @@
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
+<<<<<<< HEAD
     "gulp-sass": "^3.1.0",
+=======
+>>>>>>> aed7d96a11ce92ff6bace7e6978808aa0d6e517f
     "gulp-svg-sprite": "^1.3.1",
     "gulp-svg2png": "^0.3.0",
     "gulp-uglify": "^2.0.0",
     "gulp-usemin": "^0.3.23",
     "gulp-watch": "^4.3.5",
+<<<<<<< HEAD
+=======
+    "postcss-hexrgba": "^0.2.0",
+    "postcss-import": "^8.1.2",
+    "postcss-mixins": "^4.0.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.2.0",
+>>>>>>> aed7d96a11ce92ff6bace7e6978808aa0d6e517f
     "webpack": "^1.13.1"
   }
 }
