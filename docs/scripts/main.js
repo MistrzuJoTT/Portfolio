@@ -1,14 +1,11 @@
-// Smooth scrool
 $(document).ready(function(){
   $("a").on('click', function(event) {
-    if (this.hash !== "") {   
+    if (this.hash !== "") {
       event.preventDefault();
- 
       var hash = this.hash;
-  
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1000, function(){
+      }, 800, function(){
         window.location.hash = hash;
       });
     } 
@@ -16,4 +13,21 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function () {
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});

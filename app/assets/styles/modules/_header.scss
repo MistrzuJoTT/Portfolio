@@ -36,7 +36,18 @@ header {
 	.mobile_nav_container {
 		display: none;
 	}
-
+	 .scrollup {
+	    width: 40px;
+	    height: 40px;
+	    position: fixed;
+	    background-color: gray;
+	    bottom: 50px;
+	    right: 50px;
+	    display: none;
+	    text-indent: -9999px;
+	    background: url('../images/arrow.png') no-repeat;
+	    
+}
 
 
 /* Effect : Brackets */
@@ -101,6 +112,7 @@ header {
 	}
 	.mobile_nav_container {
 		display:inline-block;
+
 	}
 	ul.main_nav {
 		display: none;
@@ -113,6 +125,9 @@ header {
  	ul.mobile_nav  li {
 	margin: 0 15px;
 }
+	.scrollup {
+		right: 20px;
+	}
 
 }
 }
