@@ -530,7 +530,6 @@ header ul.main_nav li {
 }
 
 #contact p {
-  text-transform: uppercase;
   font-size: 14px;
   opacity: 0.6;
   -ms-flex-item-align: center;
